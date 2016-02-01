@@ -1,0 +1,21 @@
+# src/AppBundle/Resources/config/doctrine/History.orm.yml
+AppBundle\Entity\Actions:
+    type: entity
+    table: history
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        player1name:
+            type: string
+            length: 25
+        player1action:
+            type: integer
+        player2name:
+            type: string
+            length: 25
+        player2action:
+            type: integer
+        created_at:
+            type: datetime

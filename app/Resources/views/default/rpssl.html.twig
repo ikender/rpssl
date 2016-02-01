@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}Play Rock Paper Scissors Spock Lizard! | {% endblock %}
+
+{% block body %}
+<div class="container">
+
+	<h1>Rock Paper Scissors Spock Lizard</h1>
+	<p class="lead">Player 1 can enter his name, select his option of rock, paper, scissors, Spock or lizard and then hide his choice and let player 2 make his move.  Once both players have made their selection pres the green play button and it will get the results!</p>
+
+	{{ form_start(form) }}
+	{{ form_widget(form) }}
+	{{ form_end(form) }}
+
+</div>
+{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block title %}Stats | {% endblock %}
+
+{% block body %}
+<div class="container">
+
+	<h1>Rock Paper Scissors Spock Lizard Stats</h1>
+
+<table class="table table-striped table-hover datatables">
+	<thead>
+		<tr>
+			<th>Player 1 Name</th>
+			<th>Player 1 Action</th>
+			<th>Player 2 Name</th>
+			<th>Player 2 Action</th>
+			<th>Winner</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for v in history %}
+		<tr>
+			<td>{{ v.player1name }}</td>
+			<td>{{ actions[v.player1action] }}</td>
+			<td>{{ v.player2name }}</td>
+			<td>{{ actions[v.player2action] }}</td>
+	{% if v.winner %}
+			<td>{{ actions[v.winner] }}</td>
+	{% else %}
+			<td>Tie</td>
+	{% endif %}
+		</tr>
+{% endfor %}
+	</tbody>
+</table>
+
+</div>
+{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}

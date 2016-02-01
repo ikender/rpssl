@@ -1,0 +1,12 @@
+# src/AppBundle/Resources/config/doctrine/Actions.orm.yml
+AppBundle\Entity\Compares:
+    type: entity
+    table: compares
+    fields:
+        action1:
+            type: integer
+        action2:
+            type: integer
+        result:
+            type: string
+            length: 25

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+{% block title %}Results for your game! | {% endblock %}
+
+{% block body %}
+<div class="container">
+
+	<h1>Rock Paper Scissors Spock Lizard Results!</h1>
+
+	<div class="text-center">
+		<div class="actionName">Rock!</div>
+		<div class="actionName">Paper!</div>
+		<div class="actionName">Scissors!</div>
+		<div class="actionName">Spock!</div>
+		<div class="actionName">Lizard!</div>
+	</div>
+
+	<div id="results" class="text-center">
+		<p>Here are the results you have been longing for!</p>
+		<div class="col-xs-6 lead">
+			<p>{{ request.player1name }} threw</p>
+			<p>{{ actions[request.player1action] }}</p>
+		</div>
+		<div class="col-xs-6 lead">
+			<p>{{ request.player2name }} threw</p>
+			<p>{{ actions[request.player2action] }}</p>
+		</div>
+		<p class="lead">{{ actions[compare.action1] }} {{ compare.result }} {{ actions[compare.action2] }}!</p>
+	</div>
+
+	<div><a href="{{ asset('rpssl') }}" class="btn btn-primary">Play Again?</a></div>
+
+</div>
+{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+{% block javascripts %}{% endblock %}

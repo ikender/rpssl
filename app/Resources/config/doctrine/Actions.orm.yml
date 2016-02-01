@@ -1,0 +1,12 @@
+# src/AppBundle/Resources/config/doctrine/Actions.orm.yml
+AppBundle\Entity\Actions:
+    type: entity
+    table: actions
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        action:
+            type: string
+            length: 25

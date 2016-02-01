@@ -1,0 +1,11 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+rpssl:
+    path:      /rpssl
+    defaults:  { _controller: AppBundle:Rpssl:index }
+
+stats:
+    path:      /stats
+    defaults:  { _controller: AppBundle:Stats:index }
