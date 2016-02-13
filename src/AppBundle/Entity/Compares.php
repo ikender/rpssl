@@ -29,6 +29,10 @@ class Compares
      */
     public $result;
 
+	/**
+	 * Below are hte getters and setters for the compares table in the database
+	 */
+
     public function getAction1()
     {
         return $this->action1;

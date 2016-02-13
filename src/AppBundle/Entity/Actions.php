@@ -22,6 +22,10 @@ class Actions
      */
     public $action;
 
+	/**
+	 * Below are hte getters and setters for the actions table in the database
+	 */
+
     public function getId()
     {
         return $this->id;

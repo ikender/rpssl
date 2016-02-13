@@ -14,6 +14,7 @@
 		<div class="actionName">Lizard!</div>
 	</div>
 
+{# give our users the results they have been waiting for #}
 	<div id="results" class="text-center">
 		<p>Here are the results you have been longing for!</p>
 		<div class="col-xs-6 lead">
@@ -24,6 +25,7 @@
 			<p>{{ request.player2name }} threw</p>
 			<p>{{ actions[request.player2action] }}</p>
 		</div>
+{# and who won #}
 		<p class="lead">{{ actions[compare.action1] }} {{ compare.result }} {{ actions[compare.action2] }}!</p>
 	</div>
 

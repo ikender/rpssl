@@ -46,6 +46,10 @@ class History
         return $this->player1name;
     }
 
+	/**
+	 * Below are hte getters and setters for the history table in the database
+	 */
+
     public function setPlayer1name($player1name)
     {
         $this->player1name = $player1name;
